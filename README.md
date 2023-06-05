@@ -21,14 +21,6 @@ Data struture:
 - The data for individual cases or entities should start from the third row.
 - The number of columns or variables in the data frame must be more than 2.
 
-```
-wradarBoxplot <- function(df, axistype = 0, seg = 4, pty = 16, pcol = 1:8, plty = 1:6,
-                plwd = 1, pdensity = 0.01, pangle = 45, pfcol = NA, cglty = 3,
-                cglwd = 1, cglcol = "darkgrey", axislabcol = "black", title = "",
-                maxmin = TRUE, na.itp = TRUE, centerzero = FALSE, vlabels = NULL,
-                vlcex = NULL, caxislabels = NULL, calcex = NULL, paxislabels = NULL,
-                palcex = NULL, ...)
-```
 Arguments:
 - _df_: A data frame containing the variables to be plotted. The number of variables must be 3 or more.
 - _axistype_: An integer specifying the type of axis labels to be displayed. Default is 0.
@@ -56,7 +48,18 @@ Arguments:
 - _palcex_: A numeric specifying the character expansion for the variable axis labels. Default is NULL.
 - _..._: Additional arguments to be passed to the plot function.
 
-Note: This is a modified version of the original `radarBoxplot` function, so the behavior may differ slightly from the original.
+Note: This is a modified version of the original `radarBoxplot` function, so the behavior may differ slightly from the original.   
+
+**Function:**
+```
+wradarBoxplot <- function(df, axistype = 0, seg = 4, pty = 16, pcol = 1:8, plty = 1:6,
+                plwd = 1, pdensity = 0.01, pangle = 45, pfcol = NA, cglty = 3,
+                cglwd = 1, cglcol = "darkgrey", axislabcol = "black", title = "",
+                maxmin = TRUE, na.itp = TRUE, centerzero = FALSE, vlabels = NULL,
+                vlcex = NULL, caxislabels = NULL, calcex = NULL, paxislabels = NULL,
+                palcex = NULL, ...)
+```
+**Example:** 
 ```
 library(wetzel)
 
