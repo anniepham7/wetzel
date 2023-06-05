@@ -72,7 +72,6 @@ rownames(max_min) <- c("Max", "Min")
 df <- rbind(max_min, dataset)
 wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
 ```
-
-
+![radarBoxplot](Photos/20430001-4515-4bf5-807c-68d87c666dd4.png) 
 ## Contact
 For any questions or inquiries, please contact Annie Pham at *annie.pham@charite.de*
