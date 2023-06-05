@@ -23,31 +23,31 @@ wradarBoxplot <- function(df, axistype = 0, seg = 4, pty = 16, pcol = 1:8, plty 
                 palcex = NULL, ...)
 ```
 Arguments:
-- df: A data frame containing the variables to be plotted. The number of variables must be 3 or more.
-- axistype: An integer specifying the type of axis labels to be displayed. Default is 0.
-- seg: An integer specifying the number of segments in the radar plot. Default is 4.
-- pty: An integer or vector specifying the point types for plotting the data points. Default is 16.
-- pcol: An integer or vector specifying the colors for the data points. Default is 1:8.
-- plty: An integer or vector specifying the line types for connecting the data points. Default is 1:6.
-- plwd: A numeric or vector specifying the line widths for connecting the data points. Default is 1.
-- pdensity: A numeric or vector specifying the density of shading for the area between the lower and upper quartiles. Default is 0.01.
-- pangle: A numeric or vector specifying the angle at which the shading lines are drawn. Default is 45.
-- pfcol: A numeric or vector specifying the colors for the shading between the lower and upper quartiles. Default is NA.
-- cglty: An integer specifying the line type for the concentric grid lines. Default is 3.
-- cglwd: A numeric specifying the line width for the concentric grid lines. Default is 1.
+- _df_: A data frame containing the variables to be plotted. The number of variables must be 3 or more.
+- _axistype_: An integer specifying the type of axis labels to be displayed. Default is 0.
+- _seg_: An integer specifying the number of segments in the radar plot. Default is 4.
+- _pty_: An integer or vector specifying the point types for plotting the data points. Default is 16.
+- _pcol_: An integer or vector specifying the colors for the data points. Default is 1:8.
+- _plty_: An integer or vector specifying the line types for connecting the data points. Default is 1:6.
+- _plwd_: A numeric or vector specifying the line widths for connecting the data points. Default is 1.
+- _pdensity_: A numeric or vector specifying the density of shading for the area between the lower and upper quartiles. Default is 0.01.
+- _pangle_: A numeric or vector specifying the angle at which the shading lines are drawn. Default is 45.
+- _pfcol_: A numeric or vector specifying the colors for the shading between the lower and upper quartiles. Default is NA.
+- _cglty_: An integer specifying the line type for the concentric grid lines. Default is 3.
+- _cglwd_: A numeric specifying the line width for the concentric grid lines. Default is 1.
 - cglcol: A character specifying the color for the concentric grid lines. Default is "darkgrey".
-- axislabcol: A character specifying the color for the axis labels. Default is "black".
-- title: A character specifying the title for the radar plot. Default is an empty string.
-- maxmin: A logical value indicating whether the maximum and minimum values should be plotted. Default is TRUE.
-- na.itp: A logical value indicating whether missing values should be interpolated. Default is TRUE.
-- centerzero: A logical value indicating whether the radar plot should be centered at zero. Default is FALSE.
-- vlabels: A character vector specifying the labels for the variables. Default is NULL.
-- vlcex: A numeric specifying the character expansion for the variable labels. Default is NULL.
-- caxislabels: A character vector specifying the labels for the concentric grid lines. Default is NULL.
-- calcex: A numeric specifying the character expansion for the concentric grid line labels. Default is NULL.
-- paxislabels: A character vector specifying the labels for the variable axes. Default is NULL.
-- palcex: A numeric specifying the character expansion for the variable axis labels. Default is NULL.
-- ...: Additional arguments to be passed to the plot function.
+- _axislabcol_: A character specifying the color for the axis labels. Default is "black".
+- _title_: A character specifying the title for the radar plot. Default is an empty string.
+- _maxmin_: A logical value indicating whether the maximum and minimum values should be plotted. Default is TRUE.
+- _na.itp_: A logical value indicating whether missing values should be interpolated. Default is TRUE.
+- _centerzero_: A logical value indicating whether the radar plot should be centered at zero. Default is FALSE.
+- _vlabels_: A character vector specifying the labels for the variables. Default is NULL.
+- _vlcex_: A numeric specifying the character expansion for the variable labels. Default is NULL.
+- _caxislabels_: A character vector specifying the labels for the concentric grid lines. Default is NULL.
+- _calcex_: A numeric specifying the character expansion for the concentric grid line labels. Default is NULL.
+- _paxislabels_: A character vector specifying the labels for the variable axes. Default is NULL.
+- _palcex_: A numeric specifying the character expansion for the variable axis labels. Default is NULL.
+- _..._: Additional arguments to be passed to the plot function.
 
 Note: This is a modified version of the original `radarBoxplot` function, so the behavior may differ slightly from the original.
 ```
