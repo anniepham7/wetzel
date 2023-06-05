@@ -10,7 +10,7 @@ library(devtools)
 devtools::install_github("anniepham7/wetzel")
 ```
 
-## Usage
+## Usage/Functions
 
 ### 1. radarBoxplot - wradarBoxplot
 The radar-boxplot function presented here is a modification of the *radarchart* function from the library `fsmb`. This modification introduces the concept of the radar-boxplot, which combines elements of both radar charts and boxplots into a single visualization. The original *radarchart* function provided by the `fsmb` library is a useful tool for creating radar charts. However, to enhance its capabilities and enable the visualization of distributional characteristics, this function has been modified to incorporate boxplot elements. By merging the radar chart and boxplot concepts, the radar-boxplot function allows for the simultaneous display of multiple variables while providing insights into their distributions. This modified function provides a more comprehensive understanding of the data by representing the median and quartilers of each variable in a radar-like structure
