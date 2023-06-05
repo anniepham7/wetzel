@@ -1,4 +1,4 @@
-# BIH Charité - Christiane Wetzel
+# Berlin Institute of Health QUEST - Team Christiane Wetzel
 
 This repository contains an R package developed by _Annie Pham_, a Student Assistant of _Christiane Wetzel_. The package provides various R functions for data analysis and visualization.
 
