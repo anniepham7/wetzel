@@ -14,6 +14,13 @@ devtools::install_github("anniepham7/wetzel")
 
 ### 1. radarBoxplot - wradarBoxplot
 The radar-boxplot function presented here is a modification of the *radarchart* function from the library `fsmb`. This modification introduces the concept of the radar-boxplot, which combines elements of both radar charts and boxplots into a single visualization. The original *radarchart* function provided by the `fsmb` library is a useful tool for creating radar charts. However, to enhance its capabilities and enable the visualization of distributional characteristics, this function has been modified to incorporate boxplot elements. By merging the radar chart and boxplot concepts, the radar-boxplot function allows for the simultaneous display of multiple variables while providing insights into their distributions. This modified function provides a more comprehensive understanding of the data by representing the median and quartilers of each variable in a radar-like structure
+
+Data struture:
+- The first row of the data frame should contain the maximum values for each variable.
+- The second row of the data frame should contain the minimum values for each variable.
+- The data for individual cases or entities should start from the third row.
+- The number of columns or variables in the data frame must be more than 2.
+
 ```
 wradarBoxplot <- function(df, axistype = 0, seg = 4, pty = 16, pcol = 1:8, plty = 1:6,
                 plwd = 1, pdensity = 0.01, pangle = 45, pfcol = NA, cglty = 3,
@@ -73,5 +80,8 @@ df <- rbind(max_min, dataset)
 wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
 ```
 ![radarBoxplot](Photos/20430001-4515-4bf5-807c-68d87c666dd4.png) 
+
+### 2. Coming Soon
+
 ## Contact
 For any questions or inquiries, please contact Annie Pham at *annie.pham@charite.de*
