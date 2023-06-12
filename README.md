@@ -5,7 +5,7 @@ This repository contains an R package developed by _Annie Pham_, a Student Assis
 
 ## Installation
 ```
-install.packages("devtools")
+install.packages("devtools", repos = "http://cran.us.r-project.org")
 library(devtools)
 devtools::install_github("anniepham7/wetzel")
 ```
@@ -80,7 +80,7 @@ max_min <- data.frame(
 
 rownames(max_min) <- c("Max", "Min")
 df <- rbind(max_min, dataset)
-wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
+wetzel::wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
 ```
 ![radarBoxplot](Photos/20430001-4515-4bf5-807c-68d87c666dd4.png) 
 
