@@ -84,7 +84,33 @@ wetzel::wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero
 ```
 ![radarBoxplot](Photos/20430001-4515-4bf5-807c-68d87c666dd4.png) 
 
-### 2. Coming Soon
+### 2. radarBoxplot - coradarBoxplot
+The difference between coradarBoxplot (The loop iteration for drawing the polygons and axis labels starts at 1.) and wradarBoxplot (The loop iteration for drawing the polygons and axis labels starts at 0.) functions is primarily in the way they handle the axis labels and scaling of the plot.
+This distinction affects the positioning of polygons, axis labels, and other elements in the plot. The choice of starting index in each function may have been made based on specific design considerations or requirements.
+(The coradarBoxplot function enforces that the minimum value of the plot must be 0.)
+**Example:** 
+```
+library(wetzel)
+
+#Example
+dataset <- data.frame(
+  Var1 = runif(100, 0, 7),
+  Var2 = runif(100, 0, 7),
+  Var3 = runif(100, 0, 7),
+  Var4 = runif(100, 0, 7),
+  Var5 = runif(100, 0, 7),
+  Var6 = runif(100, 0, 7)
+)
+
+max_min <- data.frame(
+  Var1 = c(7, 0), Var2 = c(7, 0), Var3 = c(7, 0),
+  Var4 = c(7,0), Var5 = c(7, 0), Var6 = c(7,0)
+)
+
+rownames(max_min) <- c("Max", "Min")
+df <- rbind(max_min, dataset)
+wetzel::coradarBoxplot(df, seg = 7, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
+```
 
 ## Contact
 For any questions or inquiries, please contact Annie Pham at *annie.pham@charite.de*
