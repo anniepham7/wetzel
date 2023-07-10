@@ -88,6 +88,18 @@ wetzel::wradarBoxplot(df, seg = 7, axistype = 2, title = "Variables", centerzero
 The difference between coradarBoxplot (The loop iteration for drawing the polygons and axis labels starts at 1.) and wradarBoxplot (The loop iteration for drawing the polygons and axis labels starts at 0.) functions is primarily in the way they handle the axis labels and scaling of the plot.
 This distinction affects the positioning of polygons, axis labels, and other elements in the plot. The choice of starting index in each function may have been made based on specific design considerations or requirements.
 (The coradarBoxplot function enforces that the minimum value of the plot must be 0.)
+
+**Function:**
+```
+coradarBoxplot <- function(df, seg = 4, pty = 16, pcol = 1:8, plty = 1:6,
+                plwd = 1, pdensity = 0.01, pangle = 45, pfcol = NA, cglty = 3,
+                cglwd = 1, cglcol = "darkgrey", axislabcol = "black", title = "",
+                maxmin = TRUE, na.itp = TRUE, centerzero = FALSE, vlabels = NULL,
+                vlcex = NULL, caxislabels = NULL, calcex = NULL, paxislabels = NULL,
+                palcex = NULL, ...)
+```
+
+
 **Example:** 
 ```
 library(wetzel)
