@@ -111,6 +111,6 @@ rownames(max_min) <- c("Max", "Min")
 df <- rbind(max_min, dataset)
 wetzel::coradarBoxplot(df, seg = 7, title = "Variables", centerzero =TRUE, vlabels = c("Var1", "Var2", "Var3","Var4","Var5","Var6"), cglcol = "black", maxmin = TRUE, pdensity = 0.006, calcex = 0.7, vlcex = 0.75)
 ```
-
+![coradarBoxplot](Photos/coradarBoxplot.PNG) 
 ## Contact
 For any questions or inquiries, please contact Annie Pham at *annie.pham@charite.de*
